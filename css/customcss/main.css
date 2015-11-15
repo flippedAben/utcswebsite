@@ -1,5 +1,6 @@
 body {
 	padding-top: 50px;
+	overflow: hidden;
 }
 .centered {
 	padding: 40px 15px;
@@ -12,4 +13,8 @@ body {
 
 .centerdata {
 	text-align: center;
+}
+
+canvas {
+	display: block;
 }
