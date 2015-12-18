@@ -45,7 +45,7 @@ function drawTree() {
 	ctx.beginPath();
 	ctx.moveTo(w/2,h);
 	ctx.lineTo(w/2,h-trunk.y);
-	ctx.strokeStyle = 'brown';
+	ctx.strokeStyle = '#BF5700';
 	ctx.lineWidth = trunk_width;
 	ctx.stroke();
 
@@ -73,14 +73,14 @@ function drawBranches() {
 	}
 	trunk_length *= shrink1;
 	if(trunk_length < 10)
-		ctx.strokeStyle = 'green';
+		ctx.strokeStyle = '#382F2D';
 	else
-		ctx.strokeStyle = 'brown';
+		ctx.strokeStyle = '#BF5700';
 	tips = branch_tips;
 	ctx.stroke();
 	if(trunk_length > 2)
 		setTimeout(drawBranches,50);
-	else setTimeout(drawTree,500);
+	else setTimeout(drawTree,300);
 }
 
 function calculateTip(x,y,a,trunk_length) {
